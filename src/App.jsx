@@ -1,6 +1,9 @@
 import "bootstrap/dist/css/bootstrap.min.css";
+import TitulosSecundarios from "./components/TitulosSecundarios";
 
 function App() {
+
+  const anioActual = new Date();
   return (
     <section className="container my-4">
       <h1 className="text-center  display-3">
@@ -13,6 +16,7 @@ function App() {
         exercitationem aperiam quasi. Officiis nobis molestias labore neque
         corporis harum debitis!
       </p>
+      <TitulosSecundarios comision='c75i' anioActualProps={anioActual.getFullYear()}></TitulosSecundarios>
     </section>
   );
 }
