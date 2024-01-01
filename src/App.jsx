@@ -1,5 +1,6 @@
 import "bootstrap/dist/css/bootstrap.min.css";
 import TitulosSecundarios from "./components/TitulosSecundarios";
+import Contador from "./components/Contador";
 
 function App() {
 
@@ -17,6 +18,8 @@ function App() {
         corporis harum debitis!
       </p>
       <TitulosSecundarios comision='c75i' anioActualProps={anioActual.getFullYear()}></TitulosSecundarios>
+      {}
+      <Contador></Contador>
     </section>
   );
 }
